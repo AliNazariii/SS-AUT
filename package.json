@@ -1,7 +1,8 @@
 {
-  "name": "gh-pages",
-  "author": "thierryc",
-  "version": "1.0.2",
+  "name": "animated-snake-test",
+  "homepage": "https://AliNazariii.github.io/animated-snake-test/",
+  "author": "Ali Nazari",
+  "version": "1.0.0",
   "scripts": {
     "dev": "next",
     "build": "next build",
