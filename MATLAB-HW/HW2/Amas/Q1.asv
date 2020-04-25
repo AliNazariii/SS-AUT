@@ -1,0 +1,16 @@
+t = -2 : 1 : 8;
+x = zeros(length(t), 1);
+x(3:7) = [1, -1, 4, 5, 2];
+
+h = zeros(length(t), 1);
+h(4:6) = [2, 4, 6];
+
+y = zeros(length(t));
+for i = -2 : 1 : 8
+    for j = 1 : 1 : length(t)
+        if ((i-j <= length(t)) && (i-j >= 1))
+           y(i) = y(i) + x(j) * h(i-j);
+        end
+    end
+end
+plot(t, y);
